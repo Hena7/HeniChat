@@ -13,7 +13,9 @@ export function MessageBubble({ message, isCurrentUser }: MessageBubbleProps) {
   const timestamp =
     message.timestamp instanceof Date
       ? message.timestamp
-      : message.timestamp.toDate();
+      : message.timestamp?.toDate
+      ? message.timestamp.toDate()
+      : new Date();
 
   return (
     <motion.div
