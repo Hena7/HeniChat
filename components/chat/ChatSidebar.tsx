@@ -34,7 +34,7 @@ export function ChatSidebar({
 
   const handleLogout = () => {
     setCurrentUser(null);
-    router.push("/login");
+    router.push("/");
   };
 
   return (
