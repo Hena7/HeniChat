@@ -104,7 +104,6 @@ export default function Home() {
                 variants={item}
                 className="inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium bg-background/50 backdrop-blur-sm"
               >
-                <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
                 Welcome to HeniChat
               </motion.div>
 
